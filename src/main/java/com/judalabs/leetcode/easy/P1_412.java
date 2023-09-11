@@ -1,5 +1,6 @@
 package com.judalabs.leetcode.easy;
 
+import java.util.AbstractList;
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -22,5 +23,23 @@ public class P1_412 {
         if(isFizz) return "Fizz";
         if(isBuzz) return "Buzz";
         return String.valueOf(e);
+    }
+
+    public List<String> fizzBuzz2(int n) {
+
+        return new AbstractList<>() {
+            public String get(int index) {
+                return switch (++index % 15) {
+                    case 0 -> "FizzBuzz";
+                    case 3, 6, 9, 12 -> "Fizz";
+                    case 5, 10 -> "Buzz";
+                    default -> String.valueOf(index);
+                };
+            }
+
+            public int size() {
+                return n;
+            }
+        };
     }
 }
