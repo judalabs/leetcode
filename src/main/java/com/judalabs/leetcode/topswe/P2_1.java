@@ -1,4 +1,4 @@
-package com.judalabs.leetcode.easy;
+package com.judalabs.leetcode.topswe;
 
 import java.util.Map;
 import java.util.function.Function;

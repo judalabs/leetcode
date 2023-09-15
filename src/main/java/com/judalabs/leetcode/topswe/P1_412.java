@@ -1,4 +1,4 @@
-package com.judalabs.leetcode.easy;
+package com.judalabs.leetcode.topswe;
 
 import java.util.AbstractList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.judalabs.leetcode.easy;
+package com.judalabs.leetcode.topswe;
 
 /*
 https://leetcode.com/problems/reverse-string/

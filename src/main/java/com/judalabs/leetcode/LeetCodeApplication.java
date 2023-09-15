@@ -1,6 +1,6 @@
 package com.judalabs.leetcode;
 
-import com.judalabs.leetcode.easy.P1_412;
+import com.judalabs.leetcode.topswe.P1_412;
 
 public class LeetCodeApplication {
 
