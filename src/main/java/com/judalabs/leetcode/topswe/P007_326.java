@@ -3,7 +3,7 @@ package com.judalabs.leetcode.topswe;
 /*
 https://leetcode.com/problems/power-of-three/
  */
-public class P7_326 {
+public class P007_326 {
 
     public boolean isPowerOfThree(int n) {
         if(n == 1) return true;

@@ -8,12 +8,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P7_326Test {
+class P007_326Test {
 
     @ParameterizedTest
     @MethodSource("examples")
     void tests(int n, boolean expected) {
-        Assertions.assertEquals(expected,new P7_326().isPowerOfThree(n));
+        Assertions.assertEquals(expected,new P007_326().isPowerOfThree(n));
     }
 
     private static Stream<Arguments> examples() {

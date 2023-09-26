@@ -7,20 +7,19 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P12_746Test {
+class P008_191Test {
 
     @ParameterizedTest
     @MethodSource("examples")
-    void tests(int[] input, int expected) {
-        Assertions.assertEquals(expected,new P12_746().minCostClimbingStairs(input));
+    void tests(int input, int expected) {
+        Assertions.assertEquals(expected, new P008_191().hammingWeight(input));
     }
 
     public static Stream<Arguments> examples() {
         return Stream.of(
-                Arguments.of(new int[]{2,2,1,0}, 2),
-                Arguments.of(new int[]{10, 10, 1, 2}, 11),
-                Arguments.of(new int[]{10,15,20}, 15),
-                Arguments.of(new int[]{1,100,1,1,1,100,1,1,100,1}, 6)
+                Arguments.of(00000000000000000000000000001011, 3),
+                Arguments.of(00000000000000000000000010000000, 1)
+//                Arguments.of(11111111111111111111111111111101, 31)
         );
     }
 }

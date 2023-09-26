@@ -3,7 +3,7 @@ package com.judalabs.leetcode.topswe;
 /*
 https://leetcode.com/problems/longest-common-prefix/submissions/
  */
-public class P6_14 {
+public class P006_14 {
 
     public String longestCommonPrefix(String[] strs) {
         int longest = 0;

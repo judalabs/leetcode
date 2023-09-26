@@ -3,7 +3,7 @@ package com.judalabs.leetcode.topswe;
 /*
 https://leetcode.com/problems/reverse-string/
  */
-public class P4_344 {
+public class P004_344 {
 
     public void reverseString(char[] s) {
         char aux;

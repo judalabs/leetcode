@@ -3,7 +3,7 @@ package com.judalabs.leetcode.topswe;
 import java.util.ArrayList;
 import java.util.List;
 
-public class P10_509 {
+public class P010_509 {
 
     private List<Integer> memo = new ArrayList<>();
 

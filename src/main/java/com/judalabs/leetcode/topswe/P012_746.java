@@ -3,7 +3,7 @@ package com.judalabs.leetcode.topswe;
 /*
 https://leetcode.com/problems/min-cost-climbing-stairs/
  */
-public class P12_746 {
+public class P012_746 {
 
 
     public int minCostClimbingStairs(int[] cost) {

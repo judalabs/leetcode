@@ -7,12 +7,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P3_242Test {
+class P003_242Test {
 
     @ParameterizedTest
     @MethodSource("examples")
     void tests(String s, String t, boolean expected) {
-        Assertions.assertEquals(expected, new P3_242().isAnagram(s, t));
+        Assertions.assertEquals(expected, new P003_242().isAnagram(s, t));
     }
 
     private static Stream<Arguments> examples() {

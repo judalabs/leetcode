@@ -7,12 +7,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P2_1Test {
+class P002_1Test {
 
     @ParameterizedTest
     @MethodSource("examples")
     void tests(int[] input, int target, int[] expected) {
-        Assertions.assertArrayEquals(expected, new P2_1().twoSum(input, target));
+        Assertions.assertArrayEquals(expected, new P002_1().twoSum(input, target));
     }
 
     private static Stream<Arguments> examples() {

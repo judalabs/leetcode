@@ -3,11 +3,11 @@ package com.judalabs.leetcode.topswe;
 /*
 https://leetcode.com/problems/range-sum-query-immutable/
  */
-public class P9_303 {
+public class P009_303 {
 
     private final int[] nums;
 
-    public P9_303(int[] nums) {
+    public P009_303(int[] nums) {
         this.nums = nums;
     }
 

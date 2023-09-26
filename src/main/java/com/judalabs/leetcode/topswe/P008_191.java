@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 /*
 https://leetcode.com/problems/number-of-1-bits/
  */
-public class P8_191 {
+public class P008_191 {
 
     public int hammingWeight(int n) {
         return IntStream.range(0, 32)

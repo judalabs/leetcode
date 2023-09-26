@@ -6,7 +6,7 @@ import java.util.List;
 /*
 https://leetcode.com/problems/climbing-stairs/submissions/
  */
-public class P11_70 {
+public class P011_70 {
 
     private List<Integer> memo = new ArrayList<>();
 

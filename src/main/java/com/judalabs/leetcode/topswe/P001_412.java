@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 
-public class P1_412 {
+public class P001_412 {
     /*
     https://leetcode.com/problems/fizz-buzz/description/
      */

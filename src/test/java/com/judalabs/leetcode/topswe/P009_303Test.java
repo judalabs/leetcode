@@ -8,12 +8,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P9_303Test {
+class P009_303Test {
 
     @MethodSource("examples")
     @ParameterizedTest
     void tests(int[] input, List<List<Integer>> ranges, List<Integer> outputs) {
-        final P9_303 sut = new P9_303(input);
+        final P009_303 sut = new P009_303(input);
         for(int i = 0; i < ranges.size(); i++) {
             final List<Integer> range = ranges.get(i);
             final Integer output = outputs.get(i);

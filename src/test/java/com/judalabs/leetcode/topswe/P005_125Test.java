@@ -7,20 +7,21 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P6_14Test {
+class P005_125Test {
 
     @ParameterizedTest
     @MethodSource("examples")
-    void test(String[] s, String expected) {
-        Assertions.assertEquals(expected, new P6_14().longestCommonPrefix(s));
+    void test(String s, boolean expected) {
+        Assertions.assertEquals(expected, new P005_125().isPalindrome(s));
     }
 
     private static Stream<Arguments> examples() {
         return Stream.of(
-                Arguments.of(new String[]{"flower","flow","flight"}, "fl"),
-                Arguments.of(new String[]{"dog","racecar","car"}, ""),
-                Arguments.of(new String[]{"dog"}, "dog"),
-                Arguments.of(new String[]{"ab", "a"}, "a")
+                Arguments.of("0P", false),
+                Arguments.of("A man, a plan, a canal: Panama", true),
+                Arguments.of("race a car", false),
+                Arguments.of(" ", true),
+                Arguments.of("b a b", true)
 
         );
     }

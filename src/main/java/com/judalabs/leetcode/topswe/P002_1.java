@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 /*
 https://leetcode.com/problems/two-sum/
  */
-public class P2_1 {
+public class P002_1 {
 
     public int[] twoSum2(int[] nums, int target) {
         for(int i = 0; i < nums.length - 1; i++) {

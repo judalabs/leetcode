@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 /*
 https://leetcode.com/problems/valid-anagram/
  */
-public class P3_242 {
+public class P003_242 {
 
     public boolean isAnagram(String s, String t) {
         Map<Integer, Integer> letterCount = s.chars().boxed()

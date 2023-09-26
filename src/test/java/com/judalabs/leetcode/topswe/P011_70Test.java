@@ -1,25 +1,26 @@
 package com.judalabs.leetcode.topswe;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.util.stream.Stream;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P8_191Test {
+class P011_70Test {
 
     @ParameterizedTest
     @MethodSource("examples")
     void tests(int input, int expected) {
-        Assertions.assertEquals(expected, new P8_191().hammingWeight(input));
+        assertEquals(expected, new P011_70().climbStairs(input));
     }
 
     public static Stream<Arguments> examples() {
         return Stream.of(
-                Arguments.of(00000000000000000000000000001011, 3),
-                Arguments.of(00000000000000000000000010000000, 1)
-//                Arguments.of(11111111111111111111111111111101, 31)
+                Arguments.of(2, 2),
+                Arguments.of(3, 3),
+                Arguments.of(15, 987)
         );
     }
 }

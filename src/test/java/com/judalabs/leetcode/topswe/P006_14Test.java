@@ -7,20 +7,21 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P4_344Test {
-
+class P006_14Test {
 
     @ParameterizedTest
     @MethodSource("examples")
-    void tests(char[] mutableString, char[] expected) {
-        new P4_344().reverseString(mutableString);
-        Assertions.assertArrayEquals(expected, mutableString);
+    void test(String[] s, String expected) {
+        Assertions.assertEquals(expected, new P006_14().longestCommonPrefix(s));
     }
 
     private static Stream<Arguments> examples() {
         return Stream.of(
-                Arguments.of(new char[]{'h', 'e', 'l', 'l', 'o'}, new char[]{'o','l','l','e','h'}),
-                Arguments.of(new char[]{'H','a','n','n','a','h'}, new char[]{'h','a','n','n','a','H'})
+                Arguments.of(new String[]{"flower","flow","flight"}, "fl"),
+                Arguments.of(new String[]{"dog","racecar","car"}, ""),
+                Arguments.of(new String[]{"dog"}, "dog"),
+                Arguments.of(new String[]{"ab", "a"}, "a")
+
         );
     }
 }

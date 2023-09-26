@@ -8,12 +8,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P1_412Test {
+class P001_412Test {
 
     @ParameterizedTest
     @MethodSource("examples")
     void tests(int input, List<String> expected) {
-        Assertions.assertEquals(expected, new P1_412().fizzBuzz(input));
+        Assertions.assertEquals(expected, new P001_412().fizzBuzz(input));
     }
 
     private static Stream<Arguments> examples() {
