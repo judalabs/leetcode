@@ -3,6 +3,8 @@ package com.judalabs.leetcode.topswe;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.judalabs.leetcode.topswe.helper.TreeNode;
+
 /*
 https://leetcode.com/problems/binary-tree-inorder-traversal/
  */
@@ -22,21 +24,3 @@ public class P14_94 {
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}

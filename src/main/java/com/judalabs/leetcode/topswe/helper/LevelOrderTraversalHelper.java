@@ -35,6 +35,12 @@ public class LevelOrderTraversalHelper {
 
         TreeNode actual = queueData.remove();
         while (!list.isEmpty()) {
+
+            if(list.get(0) == null) {
+               list.remove(0);
+               continue;
+            }
+
             if(actual.left == null) {
                 actual.left = new TreeNode(list.remove(0));
                 queueData.addIfPossible(actual.left);
