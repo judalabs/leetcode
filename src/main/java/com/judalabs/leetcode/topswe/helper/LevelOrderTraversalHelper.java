@@ -38,19 +38,20 @@ public class LevelOrderTraversalHelper {
 
             if(list.get(0) == null) {
                list.remove(0);
-               continue;
-            }
-
-            if(actual.left == null) {
+            } else {
                 actual.left = new TreeNode(list.remove(0));
                 queueData.addIfPossible(actual.left);
+            }
+            if(list.isEmpty()) break;
 
-            } else if(actual.right == null) {
+            if(list.get(0) == null) {
+                list.remove(0);
+            } else {
                 actual.right = new TreeNode(list.remove(0));
                 queueData.addIfPossible(actual.right);
-            } else {
-                actual = queueData.remove();
             }
+
+            actual = queueData.remove();
         }
         return root;
     }

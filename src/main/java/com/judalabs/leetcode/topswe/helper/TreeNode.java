@@ -1,6 +1,6 @@
 package com.judalabs.leetcode.topswe.helper;
 
-import java.util.Objects;
+import java.util.StringJoiner;
 
 public class TreeNode {
 
@@ -22,15 +22,9 @@ public class TreeNode {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if(this == o) return true;
-        if(o == null || getClass() != o.getClass()) return false;
-        TreeNode treeNode = (TreeNode) o;
-        return val == treeNode.val;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(val);
+    public String toString() {
+        return new StringJoiner(", ", TreeNode.class.getSimpleName() + "[", "]")
+                .add("val=" + val)
+                .toString();
     }
 }
