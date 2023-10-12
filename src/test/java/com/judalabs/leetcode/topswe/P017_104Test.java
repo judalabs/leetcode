@@ -11,13 +11,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import com.judalabs.leetcode.topswe.helper.TreeNode;
 
-class P17_104Test {
+class P017_104Test {
 
 
     @ParameterizedTest
     @MethodSource("examples")
     void tests(TreeNode input, int output) {
-        Assertions.assertEquals(output, new P17_104().maxDepth(input));
+        Assertions.assertEquals(output, new P017_104().maxDepth(input));
     }
 
     public static Stream<Arguments> examples() {

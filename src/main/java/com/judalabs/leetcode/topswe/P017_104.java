@@ -5,7 +5,7 @@ import com.judalabs.leetcode.topswe.helper.TreeNode;
 /*
 https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
  */
-public class P17_104 {
+public class P017_104 {
 
     public int maxDepth(TreeNode root) {
         return maxDepthVisit(root, 0);
