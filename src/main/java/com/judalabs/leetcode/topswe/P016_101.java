@@ -5,7 +5,7 @@ import com.judalabs.leetcode.topswe.helper.TreeNode;
 /*
 https://leetcode.com/problems/symmetric-tree/
  */
-public class P16_101 {
+public class P016_101 {
 
     public boolean isSymmetric(TreeNode root) {
         return verifyEquals(root.left, root.right);

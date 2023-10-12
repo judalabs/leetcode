@@ -11,12 +11,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import com.judalabs.leetcode.topswe.helper.TreeNode;
 
-class P16_101Test {
+class P016_101Test {
 
     @ParameterizedTest
     @MethodSource("examples")
     void tests(TreeNode root, boolean output) {
-        Assertions.assertEquals(output, new P16_101().isSymmetric(root));
+        Assertions.assertEquals(output, new P016_101().isSymmetric(root));
     }
 
     public static Stream<Arguments> examples() {
