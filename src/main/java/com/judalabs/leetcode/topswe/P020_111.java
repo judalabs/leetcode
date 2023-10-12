@@ -8,7 +8,7 @@ import com.judalabs.leetcode.topswe.helper.TreeNode;
 /*
 https://leetcode.com/problems/minimum-depth-of-binary-tree/
  */
-public class P20_111 {
+public class P020_111 {
     public int minDepth(TreeNode root) {
         if(root == null) return 0;
         final Queue<TreeNode> queue = new LinkedList<>();

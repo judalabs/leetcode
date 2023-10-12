@@ -10,12 +10,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import com.judalabs.leetcode.topswe.helper.LevelOrderTraversalHelper;
 import com.judalabs.leetcode.topswe.helper.TreeNode;
 
-class P20_111Test {
+class P020_111Test {
 
     @MethodSource("examples")
     @ParameterizedTest
     void tests(TreeNode input, int output) {
-        Assertions.assertEquals(output, new P20_111().minDepth(input));
+        Assertions.assertEquals(output, new P020_111().minDepth(input));
     }
 
     public static Stream<Arguments> examples() {
