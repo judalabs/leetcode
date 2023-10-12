@@ -11,12 +11,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import com.judalabs.leetcode.topswe.helper.TreeNode;
 
-class P19_112Test {
+class P019_112Test {
 
     @ParameterizedTest
     @MethodSource("examples")
     void tests(TreeNode p, int targetSum, boolean result) {
-        Assertions.assertEquals(result, new P19_112().hasPathSum(p, targetSum));
+        Assertions.assertEquals(result, new P019_112().hasPathSum(p, targetSum));
     }
 
     public static Stream<Arguments> examples() {

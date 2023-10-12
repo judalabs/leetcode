@@ -5,7 +5,7 @@ import com.judalabs.leetcode.topswe.helper.TreeNode;
 /*
 https://leetcode.com/problems/path-sum/
  */
-public class P19_112 {
+public class P019_112 {
 
     public boolean hasPathSum(TreeNode actual, int decrease) {
         if( actual == null ) return false;
