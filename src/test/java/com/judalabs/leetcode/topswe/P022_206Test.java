@@ -12,13 +12,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import com.judalabs.leetcode.topswe.helper.ListNode;
 
-class P22_206Test {
+class P022_206Test {
 
     @MethodSource("examples")
     @ParameterizedTest
     void tests(ListNode input, ListNode output) {
         final int[] array = toArray(output);
-        final int[] array1 = toArray(new P22_206().reverseList(input));
+        final int[] array1 = toArray(new P022_206().reverseList(input));
         Assertions.assertArrayEquals(array, array1);
     }
 

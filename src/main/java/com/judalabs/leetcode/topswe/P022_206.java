@@ -5,7 +5,7 @@ import com.judalabs.leetcode.topswe.helper.ListNode;
 /*
 https://leetcode.com/problems/reverse-linked-list/
  */
-public class P22_206 {
+public class P022_206 {
 
     ListNode newHead = null;
     public ListNode reverseList(ListNode head) {
