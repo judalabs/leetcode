@@ -10,7 +10,7 @@ import com.judalabs.leetcode.topswe.helper.TreeNode;
 /*
 https://leetcode.com/problems/binary-tree-level-order-traversal/
  */
-public class P24_102 {
+public class P024_102 {
     public List<List<Integer>> levelOrder(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
         Queue<Integer> level = new LinkedList<>();

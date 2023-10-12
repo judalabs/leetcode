@@ -11,11 +11,11 @@ import org.junit.jupiter.params.provider.MethodSource;
 import com.judalabs.leetcode.topswe.helper.LevelOrderTraversalHelper;
 import com.judalabs.leetcode.topswe.helper.TreeNode;
 
-class P24_102Test {
+class P024_102Test {
     @MethodSource("examples")
     @ParameterizedTest
     void tests(TreeNode input, List<List<Integer>> output) {
-        Assertions.assertEquals(output, new P24_102().levelOrder(input));
+        Assertions.assertEquals(output, new P024_102().levelOrder(input));
     }
 
     public static Stream<Arguments> examples() {
