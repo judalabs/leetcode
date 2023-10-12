@@ -5,7 +5,7 @@ import com.judalabs.leetcode.topswe.helper.TreeNode;
 /*
 https://leetcode.com/problems/validate-binary-search-tree/
  */
-public class P21_98 {
+public class P021_98 {
     TreeNode ancestor = null;
 
     public boolean isValidBST(TreeNode currNode) {
