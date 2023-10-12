@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import com.judalabs.leetcode.topswe.helper.TreeNode;
 
-class P14_94Test {
+class P014_94Test {
 
     @ParameterizedTest
     @MethodSource("examples")

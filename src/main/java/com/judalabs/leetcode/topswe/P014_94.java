@@ -8,7 +8,7 @@ import com.judalabs.leetcode.topswe.helper.TreeNode;
 /*
 https://leetcode.com/problems/binary-tree-inorder-traversal/
  */
-public class P14_94 {
+public class P014_94 {
 
     public List<Integer> inorderTraversal(TreeNode root) {
         final List<Integer> list = new ArrayList<>();
