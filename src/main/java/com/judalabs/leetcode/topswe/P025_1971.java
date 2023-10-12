@@ -9,7 +9,7 @@ import java.util.function.BiFunction;
 /*
 https://leetcode.com/problems/find-if-path-exists-in-graph/description/
  */
-public class P25_1971 {
+public class P025_1971 {
 
     //DFS VERSION - could be better
     public boolean validPath(int n, int[][] edges, int source, int destination) {

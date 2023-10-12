@@ -7,12 +7,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class P25_1971Test {
+class P025_1971Test {
 
     @MethodSource("examples")
     @ParameterizedTest
     void tests(int n, int[][] edges, int source, int destination, boolean expected) {
-        Assertions.assertEquals(expected, new P25_1971().validPath(n, edges, source, destination));
+        Assertions.assertEquals(expected, new P025_1971().validPath(n, edges, source, destination));
     }
 
     public static Stream<Arguments> examples() {
