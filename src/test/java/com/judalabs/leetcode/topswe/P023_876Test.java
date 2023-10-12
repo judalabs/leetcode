@@ -12,12 +12,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import com.judalabs.leetcode.topswe.helper.ListNode;
 
-class P23_876Test {
+class P023_876Test {
 
     @MethodSource("examples")
     @ParameterizedTest
     void tests(ListNode input, ListNode output) {
-        Assertions.assertArrayEquals(toArray(output), toArray(new P23_876().middleNode(input)));
+        Assertions.assertArrayEquals(toArray(output), toArray(new P023_876().middleNode(input)));
     }
 
     public static Stream<Arguments> examples() {
